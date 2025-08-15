@@ -1,10 +1,12 @@
-import React from 'react'
-import { Navbar } from '../NavBar/Navbar'
+import IntroDiv from "./LandingPage/IntroDiv"
+import Navbar from "./NavBar/Navbar"
+
 
 const LandingPage = () => {
   return (
     <>
         <Navbar/>
+        <IntroDiv/>
     </>
   )
 }

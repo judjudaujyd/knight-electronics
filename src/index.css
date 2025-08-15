@@ -1,18 +1,20 @@
-
+@import "tailwindcss";
 
 :root {
   --background-color: rgba(0, 0, 0, 0.85); /* deep base */
-  --neon-purple: #a020f0;  /* vibrant but not eye-searing purple */
-  --neon-teal: #00f5d4;    /* tropical teal */
-  --neon-orange: #ff6b00;  /* warm, glowing orange */
+  --neon-purple: #a020f0; /* vibrant but not eye-searing purple */
+  --neon-teal: #00f5d4; /* tropical teal */
+  --neon-orange: #ff6b00; /* warm, glowing orange */
 }
-
 
 * {
   margin: 0;
-  padding: 0;
-  font-family: "Sansation", sans-serif;
+  /* padding: 0; */
+  /* font-family: "Sansation", sans-serif; */
+  font-family: "Poppins", sans-serif;
+
   transition: all ease 0.5s;
+  box-sizing: border-box;
 }
 
 body {

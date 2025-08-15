@@ -1,5 +1,5 @@
 import { Route,Routes ,BrowserRouter } from "react-router-dom";
-import LandingPage from "./assets/LandingPage";
+import LandingPage from "./LandingPage";
 
 const App = () => {
   return(
