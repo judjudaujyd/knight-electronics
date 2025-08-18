@@ -83,7 +83,7 @@ const Navbar = () => {
           {/* ========FLOATING MENU============= */}
 
           {!lScreen && mToggle &&(
-            <div className="absolute z-10 w-full h-[350px] top-[80px] lg:hidden bg-white">
+            <div className="absolute z-100 w-full h-[350px] top-[80px] lg:hidden bg-white">
             <div className=" w-full h-2/3">
               <ul className="w-full h-full flex flex-col items-start justify-evenly gap-x-4 px-4">
                 <li>
