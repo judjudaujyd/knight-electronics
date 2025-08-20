@@ -1,9 +1,11 @@
 import circuit from "../assets/background/circuit.svg";
 
+const category:string[] = ["Category One","Category Two","Category Three","Category Four","Category Five"]
+
 const OurOfferings = () => {
   return (
     <>
-      <section className="w-full min-h-4 select-none bg-[var(--neon-orange)] flex flex-col justify-center items-start gap-x-8 py-8 relative">
+      <section className="w-full min-h-4 py-16 select-none bg-[var(--neon-orange)] flex flex-col justify-center items-start gap-x-8 relative">
         {/* Background color overlay */}
         <div className="absolute inset-0 bg-[var(--neon-orange)]"></div>
 
@@ -23,13 +25,15 @@ const OurOfferings = () => {
           </p>
           {/* = */}
           <div className="w-full h-auto flex justify-center p-4">
-            <div className="w-full m-auto h-auto grid grid-cols-2 lg:grid-cols-3">
+            <div className="w-full py-4 lg:w-2/3 m-auto h-auto grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6">
               {/* ==============STYLE FOR CATEGORY================ */}
-              <div className="w-auto h-[40px] bg-gradient-to-r from-[var(--neon-orange)] via-[var(--neon-teal)] to-[var(--neon-purple)] relative rounded-sm">
-                <div className="absolute top-[1px] left-1px w-[calc(100%-2px)] h-[calc(100%-2px)] bg-white rounded-sm flex justify-center items-center">
-                  <b className="text-sm">BLA BLA BLA BLA</b>
-                </div>
-              </div>
+              {
+                category.map((val,index) => (
+                  <button key={index} className="px-4 py-2 bg-[transparent] text-white border-2 border-white rounded-2xl text-md font-bold hover:text-sm hover:cursor-pointer">
+                    {val}
+                  </button>
+                ))
+              }
               {/* ===============END OF CATEGORY================== */}
             </div>
           </div>
