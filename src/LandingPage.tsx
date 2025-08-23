@@ -1,3 +1,4 @@
+import Appriciation from "./LandingPage/Appriciation"
 import IntroDiv from "./LandingPage/IntroDiv"
 import OurOfferings from "./LandingPage/OurOfferings"
 import WhyUs from "./LandingPage/WhyUs"
@@ -11,6 +12,7 @@ const LandingPage = () => {
         <IntroDiv/>
         <OurOfferings/>
         <WhyUs/>
+        <Appriciation/>
     </>
   )
 }

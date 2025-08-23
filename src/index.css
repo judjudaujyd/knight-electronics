@@ -19,6 +19,7 @@
 
 body {
   /* background-color: var(--background-color); */
+  cursor: url("/src/assets/cursor_24x24.png") 12 12, auto;
   display: flex;
   flex-direction: column;
 }

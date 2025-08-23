@@ -29,7 +29,7 @@ const WhyUs = () => {
                   <p className="text-white text-sm opacity-100">
                     BROWSE PRODUCTS
                   </p>
-                  <IoNavigate className="text-white text-2xl opacity-100" />
+                  <IoNavigate className="text-white text-xl opacity-100" />
                 </button>
               </div>
             </div>
@@ -47,7 +47,7 @@ const WhyUs = () => {
                   <p className="text-white text-sm opacity-100">
                     BROWSE SERVICES
                   </p>
-                  <IoNavigate className="text-white text-2xl opacity-100" />
+                  <IoNavigate className="text-white text-xl opacity-100" />
                 </button>
               </div>
             </div>
