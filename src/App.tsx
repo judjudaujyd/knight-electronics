@@ -1,6 +1,6 @@
 import { Route,Routes ,BrowserRouter } from "react-router-dom";
 import LandingPage from "./LandingPage";
-import SignUp from "./SignOptions/SignUp/SignUp";
+import SignUp from "./components/SignOptions/SignUp/SignUp.tsx";
 
 const App = () => {
   return(

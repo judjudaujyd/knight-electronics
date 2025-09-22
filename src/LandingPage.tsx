@@ -1,9 +1,8 @@
-import Appriciation from "./LandingPage/Appriciation"
-import IntroDiv from "./LandingPage/IntroDiv"
-import OurOfferings from "./LandingPage/OurOfferings"
-import WhyUs from "./LandingPage/WhyUs"
-import Navbar from "./NavBar/Navbar"
-
+import Navbar from "./components/NavBar/Navbar"
+import IntroDiv from "./components/LandingPage/IntroDiv"
+import OurOfferings from "./components/LandingPage/OurOfferings"
+import WhyUs from "./components/LandingPage/WhyUs"
+import Appriciation from "./components/LandingPage/Appriciation"
 
 const LandingPage = () => {
   return (

@@ -1,8 +1,14 @@
-import type { FormEvent } from "react";
-import circuit from "../../assets/background/circuitInverted.svg";
+import { useState, type FormEvent } from "react";
+import circuit from "../../../assets/background/circuit.svg";
 import { Link } from "react-router-dom";
 
+// HandleRequests
+
+import signUPApi from "./SignUpAPi";
+
 const SignUp = () => {
+const [error , setError] = useState<string | null>(null)
+
   // ================ Array Of Feilds ======================
   type Field = {
     name: string;
@@ -21,14 +27,19 @@ const SignUp = () => {
 
   // ============== Handle Form ========================
 
-  const handleForm = (e: FormEvent<HTMLFormElement>) => {
+  const handleForm = async(e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formEntries = new FormData(e.currentTarget);
+    
     const formData = Object.fromEntries(formEntries.entries()) as Record<
       string,
       string
     >;
-    console.log(formData);
+    const authRes = formData.password == formData.confirmPassword ? await signUPApi(formData as any) : setError("Passwords Do Not Match");
+    if(authRes.errors){
+      setError(authRes.errors[0].msg)
+    }
+
   };
 
   return (
@@ -75,6 +86,11 @@ const SignUp = () => {
                 value="REGISTER"
                 className="col-span-2 px-2 py-2 text-sm font-bold bg-[var(--neon-orange)] outline-none text-white border-[var(--neon-orange)] border-2 hover:cursor-pointer hover:opacity-80"
               />
+
+              {
+              error && (
+                <p className="col-span-2 text-sm opacity-70 font-semibold">{error}</p>
+              )}
             </form>
           </section>
         </section>

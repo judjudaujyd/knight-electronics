@@ -7,7 +7,7 @@ const Appriciation = () => {
         </h1>
       </section>
       <section className="w-full h-auto p-8 flex justify-center items-center">
-        <p className="text-center opacity-90 font-semibold pt-4">
+        <p className="text-center opacity-90 font-semibold pt-4 text-md">
           At Knight Electronics, we believe innovation begins with curiosity,
           and curiosity thrives when you have the right tools in your hands.
           That’s why we are dedicated to supplying high-quality electronic

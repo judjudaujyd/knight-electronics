@@ -1,4 +1,4 @@
-import circuit from "../assets/background/circuit.svg";
+import circuit from "../../assets/background/circuit.svg"
 
 const category:string[] = ["Category One","Category Two","Category Three","Category Four","Category Five"]
 
